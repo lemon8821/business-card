@@ -1,12 +1,53 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  body {
-      background: #2C2141;
-  }
+body {
+  background: #2c2141;
+  display: flex;
+    align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+    background: #F8F8F8;
+    width: 624px;
+    height: 320px;
+    border-radius: 10px;
+}
+.person {
+    display: flex;
+
+}
+.person__photo {
+    border-radius: 30%;
+    width: 150px;
+    height: 150px;
+}
+.person__description {
+    font-family: 'Courier New', Courier, monospace;
+}
+.card {
+    padding: 32px;
+}
+.person__name {
+    margin: 0 0 2px 0;
+}
+.person__position {
+    font-style: italic;
+}
+
+.person__special {
+    font-weight: normal;
+    color: crimson;
+}
+.person__link {
+    text-decoration: none;
+    color: yellowgreen;
+}
