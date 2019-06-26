@@ -10,44 +10,50 @@ html {
 body {
   background: #2c2141;
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 16px;
 }
 
 .card {
-    background: #F8F8F8;
-    width: 624px;
-    height: 320px;
-    border-radius: 10px;
+  background: #f8f8f8;
+  max-width: 624px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 32px;
 }
 .person {
-    display: flex;
-
+  display: flex;
+  flex-direction: row;
 }
+
 .person__photo {
-    border-radius: 30%;
-    width: 150px;
-    height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 32px;
 }
 .person__description {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.card {
-    padding: 32px;
-}
+.person__description:nth-child(3) {
+    margin-bottom: 0;
+  }
+  
 .person__name {
-    margin: 0 0 2px 0;
+  margin: 0 0 2px 0;
 }
 .person__position {
-    font-style: italic;
+  font-style: italic;
 }
 
 .person__special {
-    font-weight: normal;
-    color: crimson;
+  font-weight: normal;
+  color: crimson;
 }
 .person__link {
-    text-decoration: none;
-    color: yellowgreen;
+  text-decoration: none;
+  color: yellowgreen;
 }
+
